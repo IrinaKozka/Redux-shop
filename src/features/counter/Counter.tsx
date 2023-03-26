@@ -12,9 +12,11 @@ import {
 import styles from './Counter.module.css';
 
 export function Counter() {
+  //state redux
   const count = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+  // Lokalny stan komponentu
+  const [incrementAmount, setIncrementAmount] = useState("2");
 
   const incrementValue = Number(incrementAmount) || 0;
 
